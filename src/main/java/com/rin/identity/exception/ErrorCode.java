@@ -1,8 +1,10 @@
 package com.rin.identity.exception;
 
-import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
+
+import lombok.Getter;
+
 @Getter
 public enum ErrorCode {
     INVALID_KEY(1001, "Uncategorized exception", HttpStatus.BAD_REQUEST),
@@ -16,13 +18,10 @@ public enum ErrorCode {
     UNAUTHORIZED(1008, "You do not have permission", HttpStatus.FORBIDDEN),
     INVALID_DOB(1009, "Your age must be at least {min}", HttpStatus.BAD_REQUEST),
     NOT_EMPTY(1010, "{value} must not be left empty", HttpStatus.BAD_REQUEST),
-    INVALID_TOKEN(1010, "{value} must not be left empty", HttpStatus.UNAUTHORIZED)
-    ;
+    INVALID_TOKEN(1010, "{value} must not be left empty", HttpStatus.UNAUTHORIZED);
     private int code;
     private String message;
     private HttpStatusCode statusCode;
-
-
 
     ErrorCode(int code, String message, HttpStatusCode statusCode) {
         this.code = code;

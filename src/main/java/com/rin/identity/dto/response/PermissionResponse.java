@@ -1,11 +1,7 @@
 package com.rin.identity.dto.response;
 
-import com.rin.identity.entity.Role;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
-import java.time.LocalDate;
-import java.util.Set;
 
 @Data
 @NoArgsConstructor

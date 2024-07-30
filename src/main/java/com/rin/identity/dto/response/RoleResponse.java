@@ -1,10 +1,11 @@
 package com.rin.identity.dto.response;
 
+import java.util.Set;
+
 import com.rin.identity.entity.Permission;
+
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
-import java.util.Set;
 
 @Data
 @NoArgsConstructor
